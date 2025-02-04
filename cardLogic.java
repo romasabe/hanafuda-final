@@ -4,8 +4,11 @@ public class cardLogic
 {
     public static void main(String[] args)
     {
+        
         static void create(int[] fillArray){
-            for (int q = 1; q >)
+            for (int q = 0; q < cardlist.length()){
+
+            }
         }
         static void initialize(numberofCards, handSize){
             int randomNumber;

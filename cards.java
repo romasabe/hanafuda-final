@@ -1,12 +1,42 @@
 public class Cards{
+    int month;
+    String type;
+    int artNumb;
+    String extra;
+    String name;
 
     public Cards(int monthGroup, String cardType, int artWork, String extraAtrribute, String cardName){
-        final int month = monthGroup;
-        final String type = cardType;
-        final int artNumb = artWork;
-        final String extra = extraAtrribute;
-        final String name = cardName;
+        this.month = monthGroup;
+        this.type = cardType;
+        this.artNumb = artWork;
+        this.extra = extraAtrribute;
+        this.name = cardName;
     }
+
+    public int getMonth(){
+        return month;
+    }
+
+    public String getType(){
+        return type;
+    }
+
+    public int getArtWork(){
+        return artNumb;
+    }
+
+    public String getExtra(){
+        return extra;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void displayAtrributes(){
+        System.out.println("Month: " + month + ", Type: " + type + ", ")
+    }
+
     public static void main(String[] args) {
 
         public static void createCardList(){

@@ -33,14 +33,12 @@ public class Cards{
         return name;
     }
 
-    public void displayAtrributes(){
-        System.out.println("Month: " + month + ", Type: " + type + ", Art Index: " + artNumb + ", Extra attribute: " + extra + ", Card Name: " + name);
+    public String displayAttributes(){
+        return "Month: " + getMonth() + ", Type: " + getType() + ", Art Index: " + getArtWork() + ", Extra attribute: " + getExtra() + ", Card Name: " + getName();
     }
 
     public static void main(String[] args) {
-
-        public static void createCardList(){
-            Cards[] cardList = {
+        Cards[] cardList = {
                 new Cards(1 , "light", 1, "n/a", "Jan Crane"), //January Crane
                 new Cards(1, "slip", 2, "poet", "Jan Poet Slip"), // Jan Poetry Slip
                 new Cards(1, "chaff", 3, "n/a", "Jan Chaff 1"), // jan chaff1
@@ -89,7 +87,11 @@ public class Cards{
                 new Cards(12, "chaff", 46, "n/a", "Dec chaff 1"),
                 new Cards(12, "chaff", 47, "n/a", "Dec chaff 2"),
                 new Cards(12, "chaff", 48, "n/a", "Dec chaff 1"),
-        }
+            };
+        int e = 0;
+        while (e < cardList.length){
+            System.out.println(cardList[e].displayAttributes());
+            e++;
         }
         
         // light is most points, then slips, then seeds, then chaff

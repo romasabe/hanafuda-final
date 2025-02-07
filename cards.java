@@ -34,7 +34,7 @@ public class Cards{
     }
 
     public void displayAtrributes(){
-        System.out.println("Month: " + month + ", Type: " + type + ", ")
+        System.out.println("Month: " + month + ", Type: " + type + ", Art Index: " + artNumb + ", Extra attribute: " + extra + ", Card Name: " + name);
     }
 
     public static void main(String[] args) {
